@@ -15,6 +15,7 @@
 
 body {
   background-color: var(--background-color);
+  text-align: center;
 }
 
 .l-height {
@@ -33,18 +34,40 @@ body {
   font-size: 1.2rem;
 }
 
-.navbar {
+.navbar,
+.hero-section,
+.category-list,
+.category-item,
+.category-header,
+.footer-section,
+.download-app-links {
   display: flex;
-  justify-content: space-around;
+}
+
+.navbar,
+.category-header,
+.footer-section {
   align-items: center;
 }
-.left-nav .brandname {
+
+.category-list,
+.download-app-links {
+  flex-wrap: wrap;
+}
+
+.left-nav .brandname,
+.action-btn,
+.category-name,
+.download-app-links > img {
   cursor: pointer;
+}
+
+.navbar {
+  justify-content: space-around;
 }
 
 .search-bar > input {
   max-width: 15vw;
-  border-color: var(--primary-color);
   border-radius: 5rem;
   border: none;
 }
@@ -58,20 +81,28 @@ body {
   color: var(--hover-color);
 }
 
+.hero-section,
+.action-btn {
+  margin: 1rem 0;
+}
+
+.category-list,
+.footer-section {
+  gap: 1rem;
+}
+
+.category-item,
+.footer-section {
+  flex-direction: column;
+}
+
 .hero-img img {
   opacity: 0.6;
 }
 
 .hero-section {
   position: relative;
-  text-align: center;
-  display: flex;
-  margin: 1rem 0;
   justify-content: center;
-}
-
-.hero-section .hero-description {
-  font-weight: bold;
 }
 
 .hero-text {
@@ -81,10 +112,8 @@ body {
 }
 
 .action-btn {
-  cursor: pointer;
   border: 1px solid var(--black-color);
   padding: 0.5rem 1rem;
-  margin: 1rem 0;
   background-color: var(--white-color);
 }
 
@@ -93,23 +122,15 @@ body {
 }
 
 .category-header {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
   margin: 5rem 5rem 1rem 5rem;
 }
 
 .category-list {
-  display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  flex-basis: 100px;
-  gap: 1rem;
 }
 
 .category-item {
-  display: flex;
-  flex-direction: column;
   width: 250px;
   height: 450px;
 }
@@ -121,11 +142,9 @@ body {
 }
 
 .category-name {
-  cursor: pointer;
   outline: 1px solid;
   margin: 1rem;
   padding: 1rem;
-  text-align: center;
   border-radius: 0.2rem;
 }
 
@@ -135,16 +154,10 @@ body {
 
 .footer-section {
   margin-top: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
 }
 
 .download-app-links {
-  display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
 }
 
 .download-app-links > img {
