@@ -18,14 +18,14 @@
       rel="stylesheet"
       href="https://reusable-ui.netlify.app/css/index.css"
     />
-    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="/css/home.css" />
     <title>Home</title>
   </head>
   <body>
     <div class="container">
-      <nav class="navbar">
+      <header class="navbar">
         <div class="left-nav">
-          <h3 class="brandName">Urban Clothing</h3>
+          <h3 class="brandname">Urban Clothing</h3>
         </div>
         <div class="mid-nav search-bar">
           <input type="text" placeholder="Search products" />
@@ -41,7 +41,56 @@
           </li>
           <li><i class="fa fa-light fa-cart-shopping"></i> Shopping bag</li>
         </ul>
-      </nav>
+      </header>
+      <section class="hero-section">
+        <div class="hero-img">
+          <img
+            src="assets/heroo-img.avif"
+            class="responsive-img"
+            alt="hero-image"
+          />
+          <div class="hero-text">
+            <h1 class="hero-heading heading1 l-height">
+              Color burst collection
+            </h1>
+            <p class="hero-description l-height">
+              Vibrant and refreshing styles to liven up your wardrobe.
+            </p>
+            <button class="action-btn">Shop now</button>
+          </div>
+        </div>
+      </section>
+      <section class="category-section">
+        <div class="category-header">
+          <h1 class="heading2">Category</h1>
+          <div class="category-cta">
+            <a href=""><i class="fa-solid fa-circle-arrow-left"></i></a>
+            <a href=""><i class="fa-solid fa-circle-arrow-right"></i></a>
+          </div>
+        </div>
+        <ul class="category-list list-non-bullet">
+          <li class="font-bold shadow-card">Shoes</li>
+          <li class="font-bold shadow-card">Jackets</li>
+          <li class="font-bold shadow-card">Accesories</li>
+        </ul>
+      </section>
+      <footer class="footer-section">
+        <h1 class="heading3 font-bold">
+          Experience Urban-Clothing app on mobile
+        </h1>
+        <div class="download-app-links">
+          <img
+            src="/assets/google-play-badge.png"
+            alt="Playstore app link"
+            class="playstore-link"
+          />
+          <img
+            src="/assets/app-store-badge.png"
+            alt="Appstore app link"
+            class="appstore-link"
+          />
+        </div>
+      </footer>
     </div>
   </body>
 </html>
