@@ -3,7 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Rahul Khandelwal" />
+    <meta name="description" content="Ecommerce Site" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       rel="stylesheet"
       href="https://reusable-ui.netlify.app/css/index.css"
@@ -12,13 +22,26 @@
     <title>Home</title>
   </head>
   <body>
-    <nav class="navbar">
-      <h3 class="brandName">Urban Clothing</h3>
-      <ul class="right-nav list-non-bullet">
-        <li>Guest</li>
-        <li>Favourite</li>
-        <li>Shopping bag</li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav class="navbar">
+        <div class="left-nav">
+          <h3 class="brandName">Urban Clothing</h3>
+        </div>
+        <div class="mid-nav search-bar">
+          <input type="text" placeholder="Search products" />
+        </div>
+        <ul class="right-nav list-non-bullet">
+          <li>
+            <i class="fa fa-regular fa-user"></i>
+            Guest
+          </li>
+          <li>
+            <i class="fa fa-regular fa-heart"></i>
+            Favourite
+          </li>
+          <li><i class="fa fa-light fa-cart-shopping"></i> Shopping bag</li>
+        </ul>
+      </nav>
+    </div>
   </body>
 </html>
