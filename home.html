@@ -31,15 +31,17 @@
           <input type="text" placeholder="Search products" />
         </div>
         <ul class="right-nav list-non-bullet">
-          <li>
-            <i class="fa fa-regular fa-user"></i>
+          <li class="font-bold">
+            <i class="fa fa-regular fa-user onhover"></i>
             Guest
           </li>
-          <li>
-            <i class="fa fa-regular fa-heart"></i>
+          <li class="font-bold">
+            <i class="fa fa-regular fa-heart onhover"></i>
             Favourite
           </li>
-          <li><i class="fa fa-light fa-cart-shopping"></i> Shopping bag</li>
+          <li class="font-bold">
+            <i class="fa fa-light fa-cart-shopping onhover"></i> Shopping bag
+          </li>
         </ul>
       </header>
       <section class="hero-section">
@@ -64,15 +66,30 @@
         <div class="category-header">
           <h1 class="heading2">Category</h1>
           <div class="category-cta">
-            <a href=""><i class="fa-solid fa-circle-arrow-left"></i></a>
-            <a href=""><i class="fa-solid fa-circle-arrow-right"></i></a>
+            <a href="#"
+              ><i class="fa-solid fa-circle-arrow-left onhover"></i
+            ></a>
+            <a href="#"
+              ><i class="fa-solid fa-circle-arrow-right onhover"></i
+            ></a>
           </div>
         </div>
-        <ul class="category-list list-non-bullet">
-          <li class="font-bold shadow-card">Shoes</li>
-          <li class="font-bold shadow-card">Jackets</li>
-          <li class="font-bold shadow-card">Accesories</li>
-        </ul>
+        <div class="category-list">
+          <div class="shoe-category category-item">
+            <img src="/assets/shoes-cover.avif" alt="cover image" />
+            <a href="#" class="font-bold shadow-card category-name">Shoes</a>
+          </div>
+          <div class="jacket-category category-item">
+            <img src="/assets/jackets-cover.avif" alt="cover image" />
+            <a href="#" class="font-bold shadow-card category-name">Jackets</a>
+          </div>
+          <div class="accessories-category category-item">
+            <img src="/assets/accessories-cover.avif" alt="cover image" />
+            <a href="#" class="font-bold shadow-card category-name"
+              >Accessories</a
+            >
+          </div>
+        </div>
       </section>
       <footer class="footer-section">
         <h1 class="heading3 font-bold">
@@ -90,6 +107,7 @@
             class="appstore-link"
           />
         </div>
+        <h4 class="origin">INDIA</h4>
       </footer>
     </div>
   </body>
