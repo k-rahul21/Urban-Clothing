@@ -6,7 +6,6 @@
     <meta name="author" content="Rahul Khandelwal" />
     <meta name="description" content="Ecommerce Site" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="home.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -25,23 +24,25 @@
     <div class="container">
       <header class="navbar">
         <div class="left-nav">
-          <h3 class="brandname">Urban Clothing</h3>
+          <a href="#" class="brandname font-bold">Urban Clothing</a>
         </div>
         <div class="mid-nav search-bar">
           <input type="text" placeholder="Search products" />
         </div>
         <ul class="right-nav list-non-bullet">
-          <li class="font-bold">
+          <li>
             <i class="fa fa-regular fa-user onhover"></i>
             <span class="navbar-item">Guest</span>
           </li>
-          <li class="font-bold">
+          <li>
             <i class="fa fa-regular fa-heart onhover"></i>
             <span class="navbar-item">Favourite</span>
           </li>
-          <li class="font-bold">
-            <i class="fa fa-light fa-cart-shopping onhover"></i>
-            <span class="navbar-item">Shopping bag</span>
+          <li>
+            <a href="/pages/cart.html" class="navbar-item">
+              <i class="fa fa-light fa-cart-shopping onhover"></i>
+              Cart</a
+            >
           </li>
         </ul>
       </header>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Rahul Khandelwal" />
+    <meta name="description" content="Ecommerce Site" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://reusable-ui.netlify.app/css/index.css"
+    />
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/cart.css" />
+    <title>Cart</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="navbar">
+        <div class="left-nav">
+          <a class="brandname font-bold" href="/home.html">Urban Clothing</a>
+        </div>
+        <div class="mid-nav">
+          <ul class="checkout-steps">
+            <li class="step step1 active">Bag</li>
+            <li><hr class="divider" /></li>
+            <li class="step step2">Address</li>
+            <li><hr class="divider" /></li>
+            <li class="step step3">Payment</li>
+          </ul>
+        </div>
+        <div class="secure-container">
+          <span> <i class="fas fa-shield-alt"></i> 100% Secure</span>
+        </div>
+      </header>
+      <section class="cart-section">
+        <div class="category-header">
+          <h2 class="heading2">Welcome to your cart</h2>
+        </div>
+        <div class="cart-block">
+          <div class="horizontal-card shadow-card">
+            <div class="card-image container-image">
+              <img src="/assets/biker-jacket.avif" alt="jacket" />
+              <span class="btn-dismiss"><i class="fa fa-close"></i></span>
+            </div>
+
+            <div class="card-description">
+              <h3 class="product-brand-name l-height">H&M</h3>
+              <h5 class="product-name l-height">Black Leather Jacket</h5>
+              <p class="product-description l-height">
+                Sold by: H & M Retail Private Limited.
+              </p>
+              <div class="price-section">
+                <h4 class="discounted-price">Rs. 4999</h4>
+                <h4 class="original-price">Rs. 5999</h4>
+              </div>
+            </div>
+          </div>
+          <div class="horizontal-card shadow-card">
+            <div class="card-image container-image">
+              <img src="/assets/bomber-jacket.avif" alt="jacket" />
+              <span class="btn-dismiss"><i class="fa fa-close"></i></span>
+            </div>
+
+            <div class="card-description">
+              <h3 class="product-brand-name l-height">H&M</h3>
+              <h5 class="product-name l-height">Bomber Jacket</h5>
+              <p class="product-description l-height">
+                Sold by: H & M Retail Private Limited.
+              </p>
+              <div class="price-section">
+                <h4 class="discounted-price">Rs. 6999</h4>
+                <h4 class="original-price">Rs. 5999</h4>
+              </div>
+            </div>
+          </div>
+          <div class="horizontal-card shadow-card">
+            <div class="card-image container-image">
+              <img src="/assets/air-offwhite.avif" alt="Shoe" />
+              <span class="btn-dismiss"><i class="fa fa-close"></i></span>
+            </div>
+
+            <div class="card-description">
+              <h3 class="product-brand-name l-height">Nike</h3>
+              <h5 class="product-name l-height">Nike Air Jordan</h5>
+              <p class="product-description l-height">
+                Sold by: Nike Private Limited..
+              </p>
+              <div class="price-section">
+                <h4 class="discounted-price">Rs. 9999</h4>
+                <h4 class="original-price">Rs. 7999</h4>
+              </div>
+            </div>
+          </div>
+          <div class="cart-total-section">
+            <h2 class="heading2">Total Bill</h2>
+            <div class="coupon-section">
+              <h4>Coupon</h4>
+              <div class="coupon-apply-section">
+                <label> <i class="fa-solid fa-tag"></i> Apply Coupons</label>
+                <button class="apply-btn action-btn">Apply</button>
+              </div>
+              <div class="price-detail-section">
+                <h4>Price Details</h4>
+                <div class="pricing-detail mrp-section">
+                  <h5 class="mrp">Total MRP</h5>
+                  <h5 class="amount">Rs. 14999</h5>
+                </div>
+                <div class="pricing-detail discount-section">
+                  <h5 class="discount-on-mrp">Discount on MRP</h5>
+                  <h5 class="amount">Rs. 2999</h5>
+                </div>
+                <div class="pricing-detail coupon-discount-section">
+                  <h5 class="coupon-discount">Coupon Discount</h5>
+                  <h5 class="amount">Rs. 500</h5>
+                </div>
+                <div class="pricing-detail convenience-fee-section">
+                  <h5 class="convenience-fee">Convenience Fee</h5>
+                  <h5 class="amount">Rs. 99</h5>
+                </div>
+                <div class="pricing-detail total-amount-section">
+                  <h4 class="total-amount">Total Amount</h4>
+                  <h4 class="amount">Rs. 11598</h4>
+                </div>
+              </div>
+            </div>
+            <button class="secondary-btn order-place-btn">Place Order</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
