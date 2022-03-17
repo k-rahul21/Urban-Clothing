@@ -71,6 +71,10 @@ a {
   justify-content: space-around;
 }
 
+.navbar-item {
+  color: var(--black-color);
+}
+
 .search-bar > input {
   max-width: 15vw;
   border-radius: 5rem;
