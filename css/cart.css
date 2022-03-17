@@ -72,3 +72,13 @@
 .order-place-btn {
   width: 100%;
 }
+
+@media only screen and (max-width: 600px) {
+  .mid-nav {
+    display: none;
+  }
+
+  .category-header {
+    text-align: center;
+  }
+}
