@@ -2,10 +2,31 @@
   margin: 1rem;
 }
 
-.checkout-steps {
+.checkout-steps,
+.cart-block,
+.coupon-apply-section,
+.pricing-detail {
   display: flex;
   flex-direction: row;
+}
+
+.coupon-apply-section,
+.pricing-detail,
+.checkout-steps {
   align-items: center;
+}
+
+.cart-block,
+.cart-block .horizontal-card {
+  flex-wrap: wrap;
+}
+
+.cart-block .horizontal-card,
+.cart-total-section {
+  border: 1px solid var(--black-color);
+}
+
+.checkout-steps {
   list-style: none;
   gap: 0.4rem;
 }
@@ -25,10 +46,7 @@
 }
 
 .cart-block {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
   gap: 2rem;
   margin: 0 5rem;
 }
@@ -36,9 +54,7 @@
 .cart-block .horizontal-card {
   width: 200px;
   justify-content: flex-start;
-  border: 1px solid var(--black-color);
   text-align: left;
-  flex-wrap: wrap;
 }
 
 .cart-block .horizontal-card .card-description .product-description {
@@ -47,15 +63,12 @@
 }
 
 .cart-total-section {
-  border: 1px solid var(--black-color);
   width: 400px;
   padding: 1.5rem;
 }
 
 .coupon-apply-section,
 .pricing-detail {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
