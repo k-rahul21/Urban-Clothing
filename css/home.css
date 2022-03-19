@@ -141,6 +141,10 @@ a {
   background-color: var(--black-color);
 }
 
+.btn-dismiss {
+  cursor: pointer;
+}
+
 .category-section {
   margin: 2rem;
 }
