@@ -1,0 +1,31 @@
+.login-form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 5rem auto;
+}
+
+p,
+label {
+  color: var(--shadow-color);
+  margin: 0.5rem 0;
+}
+
+input {
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  border-color: var(--black-color);
+}
+
+button {
+  margin: 1rem 0 0.5rem 0;
+}
+
+.forgot-password-link {
+  margin-top: 1rem;
+}
+
+.sign-up-link {
+  text-align: center;
+}
