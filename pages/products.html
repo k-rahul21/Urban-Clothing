@@ -51,641 +51,358 @@
           </li>
         </ul>
       </header>
-      <div class="filter-section">
-        <div class="filter-header">
-          <h4>FILTERS</h4>
-          <button class="action-btn">clear</button>
+      <main class="product-section">
+        <div class="filter-section">
+          <div class="filter-header">
+            <h4>FILTERS</h4>
+            <button class="action-btn">clear</button>
+          </div>
+          <h5 class="section-heading">Price range(Rs.)</h5>
+          <div class="slider-container">
+            <input
+              class="slider"
+              type="range"
+              min="2000"
+              max="4000"
+              step="1000"
+              value="3000"
+            />
+
+            <div class="slider-range-value">
+              <p class="slider-low">2000</p>
+              <p class="slider-mid">3000</p>
+              <p class="slider-high">4000</p>
+            </div>
+          </div>
+          <h5 class="section-heading">Sort price by</h5>
+          <ul class="list-non-bullet">
+            <li>
+              <input type="radio" name="price-tag" id="price-range-1" /> Low to
+              high
+            </li>
+            <li>
+              <input type="radio" name="price-tag" id="price-range-2" /> High to
+              low
+            </li>
+          </ul>
+          <h5 class="section-heading">Ratings ⭐</h5>
+          <ul class="list-non-bullet">
+            <li>
+              <input type="radio" name="rating" id="rating" /> 4.5 & above
+            </li>
+            <li><input type="radio" name="rating" id="rating" /> 4 & above</li>
+            <li><input type="radio" name="rating" id="rating" /> 3 & above</li>
+            <li><input type="radio" name="rating" id="rating" /> 2 & above</li>
+            <li><input type="radio" name="rating" id="rating" /> 1 & above</li>
+          </ul>
+          <h5 class="section-heading">CATEGORIES</h5>
+          <ul class="list-non-bullet">
+            <li>
+              <input type="checkbox" name="category-1" id="category-1" /> Shoe
+            </li>
+            <li>
+              <input type="checkbox" name="category-1" id="category-2" /> Jacket
+            </li>
+            <li>
+              <input type="checkbox" name="category-1" id="category-3" />
+              Accessories
+            </li>
+          </ul>
+          <h5 class="section-heading">BRANDS</h5>
+          <ul class="list-non-bullet">
+            <li>
+              <input type="checkbox" name="category-1" id="category-1" /> H&M
+            </li>
+            <li>
+              <input type="checkbox" name="category-1" id="category-2" /> ZARA
+            </li>
+            <li>
+              <input type="checkbox" name="category-1" id="category-3" />
+              Westside
+            </li>
+          </ul>
         </div>
-        <div class="divider"></div>
-        <h5 class="section-heading">Price range(Rs.)</h5>
-        <div class="slider-container">
-          <input
-            class="slider"
-            type="range"
-            min="2000"
-            max="4000"
-            step="1000"
-            value="3000"
-          />
-
-          <div class="slider-range-value">
-            <p class="slider-low">2000</p>
-            <p class="slider-mid">3000</p>
-            <p class="slider-high">4000</p>
-          </div>
-        </div>
-        <div class="divider"></div>
-        <h5 class="section-heading">Sort price by</h5>
-        <ul>
-          <li>
-            <input type="radio" name="price" id="price-range-1" />
-            <label for="price">Low to high</label>
-          </li>
-          <li>
-            <input type="radio" name="price" id="price-range-2" />
-            <label for="price">high to low</label>
-          </li>
-        </ul>
-        <div class="divider"></div>
-        <h5 class="section-heading">Ratings ⭐</h5>
-        <ul>
-          <li>
-            <input type="radio" name="rating" id="rating" /> " 4.5 & above"
-          </li>
-          <li><input type="radio" name="rating" id="rating" /> " 4 & above"</li>
-          <li><input type="radio" name="rating" id="rating" /> " 3 & above"</li>
-          <li><input type="radio" name="rating" id="rating" /> " 2 & above"</li>
-          <li><input type="radio" name="rating" id="rating" /> " 1 & above"</li>
-        </ul>
-        <div class="divider"></div>
-        <h5 class="section-heading">CATEGORIES</h5>
-        <ul>
-          <li>
-            <input type="checkbox" name="category-1" id="category-1" />" Shoe "
-          </li>
-          <li>
-            <input type="checkbox" name="category-1" id="category-2" />" Jacket
-            "
-          </li>
-          <li>
-            <input type="checkbox" name="category-1" id="category-3" />"
-            Accessories "
-          </li>
-        </ul>
-        <div class="divider"></div>
-        <h5 class="section-heading">BRANDS</h5>
-        <ul>
-          <li>
-            <input type="checkbox" name="category-1" id="category-1" />" H&M "
-          </li>
-          <li>
-            <input type="checkbox" name="category-1" id="category-2" />" ZARA "
-          </li>
-          <li>
-            <input type="checkbox" name="category-1" id="category-3" />"
-            Westside "
-          </li>
-        </ul>
-      </div>
-      <div class="products-container">
-        <div class="card">
-          <div class="card-image container-image">
-            <img src="/assets/bomber-jacket.avif" alt="product" />
-            <span class="btn-dismiss"><i class="fa fa-close"></i></span>
-          </div>
-
-          <div class="card-description">
-            <h4 class="product-name">product</h4>
-            <p class="product-description">product name</p>
-            <div class="price-section">
-              <h5 class="discounted-price">Rs. 4999</h5>
-              <h5 class="original-price">Rs. 5999</h5>
+        <div class="products-container">
+          <div class="card">
+            <div class="card-image container-image">
+              <img src="/assets/bomber-jacket.avif" alt="product" />
+              <span class="btn-dismiss"><i class="fa fa-close"></i></span>
             </div>
 
-            <div class="card-cta">
-              <button class="secondary-btn">
-                Buy now
-                <span class="btn-icon"
-                  ><i class="fa fa-shopping-cart"></i
-                ></span>
-              </button>
-              <button class="action-btn">
-                Wishlist
-                <span class="btn-icon"
-                  ><i class="fa-regular fa-heart"></i
-                ></span>
-              </button>
+            <div class="card-description">
+              <h4 class="product-name">product</h4>
+              <p class="product-description">product name</p>
+              <div class="price-section">
+                <h5 class="discounted-price">Rs. 4999</h5>
+                <h5 class="original-price">Rs. 5999</h5>
+              </div>
+
+              <div class="card-cta">
+                <button class="secondary-btn">
+                  Buy now
+                  <span class="btn-icon"
+                    ><i class="fa fa-shopping-cart"></i
+                  ></span>
+                </button>
+                <button class="action-btn">
+                  Wishlist
+                  <span class="btn-icon"
+                    ><i class="fa-regular fa-heart"></i
+                  ></span>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="card">
-          <div class="card-image container-image">
-            <img src="/assets/biker-jacket.avif" alt="product" />
-            <span class="btn-dismiss"><i class="fa fa-close"></i></span>
-          </div>
-
-          <div class="card-description">
-            <h4 class="product-name">product</h4>
-            <p class="product-description">product name</p>
-            <div class="price-section">
-              <h5 class="discounted-price">Rs. 4999</h5>
-              <h5 class="original-price">Rs. 5999</h5>
+          <div class="card">
+            <div class="card-image container-image">
+              <img src="/assets/biker-jacket.avif" alt="product" />
+              <span class="btn-dismiss"><i class="fa fa-close"></i></span>
             </div>
 
-            <div class="card-cta">
-              <button class="secondary-btn">
-                Buy now
-                <span class="btn-icon"
-                  ><i class="fa fa-shopping-cart"></i
-                ></span>
-              </button>
-              <button class="action-btn">
-                Wishlist
-                <span class="btn-icon"
-                  ><i class="fa-regular fa-heart"></i
-                ></span>
-              </button>
+            <div class="card-description">
+              <h4 class="product-name">product</h4>
+              <p class="product-description">product name</p>
+              <div class="price-section">
+                <h5 class="discounted-price">Rs. 4999</h5>
+                <h5 class="original-price">Rs. 5999</h5>
+              </div>
+
+              <div class="card-cta">
+                <button class="secondary-btn">
+                  Buy now
+                  <span class="btn-icon"
+                    ><i class="fa fa-shopping-cart"></i
+                  ></span>
+                </button>
+                <button class="action-btn">
+                  Wishlist
+                  <span class="btn-icon"
+                    ><i class="fa-regular fa-heart"></i
+                  ></span>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="card">
-          <div class="card-image container-image">
-            <img src="/assets/bomber-jacket.avif" alt="product" />
-            <span class="btn-dismiss"><i class="fa fa-close"></i></span>
-          </div>
-
-          <div class="card-description">
-            <h4 class="product-name">product</h4>
-            <p class="product-description">product name</p>
-            <div class="price-section">
-              <h5 class="discounted-price">Rs. 4999</h5>
-              <h5 class="original-price">Rs. 5999</h5>
+          <div class="card">
+            <div class="card-image container-image">
+              <img src="/assets/bomber-jacket.avif" alt="product" />
+              <span class="btn-dismiss"><i class="fa fa-close"></i></span>
             </div>
 
-            <div class="card-cta">
-              <button class="secondary-btn">
-                Buy now
-                <span class="btn-icon"
-                  ><i class="fa fa-shopping-cart"></i
-                ></span>
-              </button>
-              <button class="action-btn">
-                Wishlist
-                <span class="btn-icon"
-                  ><i class="fa-regular fa-heart"></i
-                ></span>
-              </button>
+            <div class="card-description">
+              <h4 class="product-name">product</h4>
+              <p class="product-description">product name</p>
+              <div class="price-section">
+                <h5 class="discounted-price">Rs. 4999</h5>
+                <h5 class="original-price">Rs. 5999</h5>
+              </div>
+
+              <div class="card-cta">
+                <button class="secondary-btn">
+                  Buy now
+                  <span class="btn-icon"
+                    ><i class="fa fa-shopping-cart"></i
+                  ></span>
+                </button>
+                <button class="action-btn">
+                  Wishlist
+                  <span class="btn-icon"
+                    ><i class="fa-regular fa-heart"></i
+                  ></span>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="card">
-          <div class="card-image container-image">
-            <img src="/assets/street-sneaker.avif" alt="product" />
-            <span class="btn-dismiss"><i class="fa fa-close"></i></span>
-          </div>
-
-          <div class="card-description">
-            <h4 class="product-name">product</h4>
-            <p class="product-description">product name</p>
-            <div class="price-section">
-              <h5 class="discounted-price">Rs. 4999</h5>
-              <h5 class="original-price">Rs. 5999</h5>
+          <div class="card">
+            <div class="card-image container-image">
+              <img src="/assets/street-sneaker.avif" alt="product" />
+              <span class="btn-dismiss"><i class="fa fa-close"></i></span>
             </div>
 
-            <div class="card-cta">
-              <button class="secondary-btn">
-                Buy now
-                <span class="btn-icon"
-                  ><i class="fa fa-shopping-cart"></i
-                ></span>
-              </button>
-              <button class="action-btn">
-                Wishlist
-                <span class="btn-icon"
-                  ><i class="fa-regular fa-heart"></i
-                ></span>
-              </button>
+            <div class="card-description">
+              <h4 class="product-name">product</h4>
+              <p class="product-description">product name</p>
+              <div class="price-section">
+                <h5 class="discounted-price">Rs. 4999</h5>
+                <h5 class="original-price">Rs. 5999</h5>
+              </div>
+
+              <div class="card-cta">
+                <button class="secondary-btn">
+                  Buy now
+                  <span class="btn-icon"
+                    ><i class="fa fa-shopping-cart"></i
+                  ></span>
+                </button>
+                <button class="action-btn">
+                  Wishlist
+                  <span class="btn-icon"
+                    ><i class="fa-regular fa-heart"></i
+                  ></span>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="card">
-          <div class="card-image container-image">
-            <img src="/assets/air-offwhite.avif" alt="product" />
-            <span class="btn-dismiss"><i class="fa fa-close"></i></span>
-          </div>
-
-          <div class="card-description">
-            <h4 class="product-name">product</h4>
-            <p class="product-description">product name</p>
-            <div class="price-section">
-              <h5 class="discounted-price">Rs. 4999</h5>
-              <h5 class="original-price">Rs. 5999</h5>
+          <div class="card">
+            <div class="card-image container-image">
+              <img src="/assets/air-offwhite.avif" alt="product" />
+              <span class="btn-dismiss"><i class="fa fa-close"></i></span>
             </div>
 
-            <div class="card-cta">
-              <button class="secondary-btn">
-                Buy now
-                <span class="btn-icon"
-                  ><i class="fa fa-shopping-cart"></i
-                ></span>
-              </button>
-              <button class="action-btn">
-                Wishlist
-                <span class="btn-icon"
-                  ><i class="fa-regular fa-heart"></i
-                ></span>
-              </button>
+            <div class="card-description">
+              <h4 class="product-name">product</h4>
+              <p class="product-description">product name</p>
+              <div class="price-section">
+                <h5 class="discounted-price">Rs. 4999</h5>
+                <h5 class="original-price">Rs. 5999</h5>
+              </div>
+
+              <div class="card-cta">
+                <button class="secondary-btn">
+                  Buy now
+                  <span class="btn-icon"
+                    ><i class="fa fa-shopping-cart"></i
+                  ></span>
+                </button>
+                <button class="action-btn">
+                  Wishlist
+                  <span class="btn-icon"
+                    ><i class="fa-regular fa-heart"></i
+                  ></span>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="card">
-          <div class="card-image container-image">
-            <img src="/assets/nike-jordan.avif" alt="product" />
-            <span class="btn-dismiss"><i class="fa fa-close"></i></span>
-          </div>
-
-          <div class="card-description">
-            <h4 class="product-name">product</h4>
-            <p class="product-description">product name</p>
-            <div class="price-section">
-              <h5 class="discounted-price">Rs. 4999</h5>
-              <h5 class="original-price">Rs. 5999</h5>
+          <div class="card">
+            <div class="card-image container-image">
+              <img src="/assets/bomber-jacket.avif" alt="product" />
+              <span class="btn-dismiss"><i class="fa fa-close"></i></span>
             </div>
 
-            <div class="card-cta">
-              <button class="secondary-btn">
-                Buy now
-                <span class="btn-icon"
-                  ><i class="fa fa-shopping-cart"></i
-                ></span>
-              </button>
-              <button class="action-btn">
-                Wishlist
-                <span class="btn-icon"
-                  ><i class="fa-regular fa-heart"></i
-                ></span>
-              </button>
+            <div class="card-description">
+              <h4 class="product-name">product</h4>
+              <p class="product-description">product name</p>
+              <div class="price-section">
+                <h5 class="discounted-price">Rs. 4999</h5>
+                <h5 class="original-price">Rs. 5999</h5>
+              </div>
+
+              <div class="card-cta">
+                <button class="secondary-btn">
+                  Buy now
+                  <span class="btn-icon"
+                    ><i class="fa fa-shopping-cart"></i
+                  ></span>
+                </button>
+                <button class="action-btn">
+                  Wishlist
+                  <span class="btn-icon"
+                    ><i class="fa-regular fa-heart"></i
+                  ></span>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="card">
-          <div class="card-image container-image">
-            <img src="/assets/biker-jacket.avif" alt="product" />
-            <span class="btn-dismiss"><i class="fa fa-close"></i></span>
-          </div>
-
-          <div class="card-description">
-            <h4 class="product-name">product</h4>
-            <p class="product-description">product name</p>
-            <div class="price-section">
-              <h5 class="discounted-price">Rs. 4999</h5>
-              <h5 class="original-price">Rs. 5999</h5>
+          <div class="card">
+            <div class="card-image container-image">
+              <img src="/assets/bomber-jacket.avif" alt="product" />
+              <span class="btn-dismiss"><i class="fa fa-close"></i></span>
             </div>
 
-            <div class="card-cta">
-              <button class="secondary-btn">
-                Buy now
-                <span class="btn-icon"
-                  ><i class="fa fa-shopping-cart"></i
-                ></span>
-              </button>
-              <button class="action-btn">
-                Wishlist
-                <span class="btn-icon"
-                  ><i class="fa-regular fa-heart"></i
-                ></span>
-              </button>
+            <div class="card-description">
+              <h4 class="product-name">product</h4>
+              <p class="product-description">product name</p>
+              <div class="price-section">
+                <h5 class="discounted-price">Rs. 4999</h5>
+                <h5 class="original-price">Rs. 5999</h5>
+              </div>
+
+              <div class="card-cta">
+                <button class="secondary-btn">
+                  Buy now
+                  <span class="btn-icon"
+                    ><i class="fa fa-shopping-cart"></i
+                  ></span>
+                </button>
+                <button class="action-btn">
+                  Wishlist
+                  <span class="btn-icon"
+                    ><i class="fa-regular fa-heart"></i
+                  ></span>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="card">
-          <div class="card-image container-image">
-            <img src="/assets/bomber-jacket.avif" alt="product" />
-            <span class="btn-dismiss"><i class="fa fa-close"></i></span>
-          </div>
-
-          <div class="card-description">
-            <h4 class="product-name">product</h4>
-            <p class="product-description">product name</p>
-            <div class="price-section">
-              <h5 class="discounted-price">Rs. 4999</h5>
-              <h5 class="original-price">Rs. 5999</h5>
+          <div class="card">
+            <div class="card-image container-image">
+              <img src="/assets/bomber-jacket.avif" alt="product" />
+              <span class="btn-dismiss"><i class="fa fa-close"></i></span>
             </div>
 
-            <div class="card-cta">
-              <button class="secondary-btn">
-                Buy now
-                <span class="btn-icon"
-                  ><i class="fa fa-shopping-cart"></i
-                ></span>
-              </button>
-              <button class="action-btn">
-                Wishlist
-                <span class="btn-icon"
-                  ><i class="fa-regular fa-heart"></i
-                ></span>
-              </button>
+            <div class="card-description">
+              <h4 class="product-name">product</h4>
+              <p class="product-description">product name</p>
+              <div class="price-section">
+                <h5 class="discounted-price">Rs. 4999</h5>
+                <h5 class="original-price">Rs. 5999</h5>
+              </div>
+
+              <div class="card-cta">
+                <button class="secondary-btn">
+                  Buy now
+                  <span class="btn-icon"
+                    ><i class="fa fa-shopping-cart"></i
+                  ></span>
+                </button>
+                <button class="action-btn">
+                  Wishlist
+                  <span class="btn-icon"
+                    ><i class="fa-regular fa-heart"></i
+                  ></span>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="card">
-          <div class="card-image container-image">
-            <img src="/assets/bomber-jacket.avif" alt="product" />
-            <span class="btn-dismiss"><i class="fa fa-close"></i></span>
-          </div>
-
-          <div class="card-description">
-            <h4 class="product-name">product</h4>
-            <p class="product-description">product name</p>
-            <div class="price-section">
-              <h5 class="discounted-price">Rs. 4999</h5>
-              <h5 class="original-price">Rs. 5999</h5>
+          <div class="card">
+            <div class="card-image container-image">
+              <img src="/assets/street-sneaker.avif" alt="product" />
+              <span class="btn-dismiss"><i class="fa fa-close"></i></span>
             </div>
 
-            <div class="card-cta">
-              <button class="secondary-btn">
-                Buy now
-                <span class="btn-icon"
-                  ><i class="fa fa-shopping-cart"></i
-                ></span>
-              </button>
-              <button class="action-btn">
-                Wishlist
-                <span class="btn-icon"
-                  ><i class="fa-regular fa-heart"></i
-                ></span>
-              </button>
+            <div class="card-description">
+              <h4 class="product-name">product</h4>
+              <p class="product-description">product name</p>
+              <div class="price-section">
+                <h5 class="discounted-price">Rs. 4999</h5>
+                <h5 class="original-price">Rs. 5999</h5>
+              </div>
+
+              <div class="card-cta">
+                <button class="secondary-btn">
+                  Buy now
+                  <span class="btn-icon"
+                    ><i class="fa fa-shopping-cart"></i
+                  ></span>
+                </button>
+                <button class="action-btn">
+                  Wishlist
+                  <span class="btn-icon"
+                    ><i class="fa-regular fa-heart"></i
+                  ></span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
-
-        <div class="card">
-          <div class="card-image container-image">
-            <img src="/assets/bomber-jacket.avif" alt="product" />
-            <span class="btn-dismiss"><i class="fa fa-close"></i></span>
-          </div>
-
-          <div class="card-description">
-            <h4 class="product-name">product</h4>
-            <p class="product-description">product name</p>
-            <div class="price-section">
-              <h5 class="discounted-price">Rs. 4999</h5>
-              <h5 class="original-price">Rs. 5999</h5>
-            </div>
-
-            <div class="card-cta">
-              <button class="secondary-btn">
-                Buy now
-                <span class="btn-icon"
-                  ><i class="fa fa-shopping-cart"></i
-                ></span>
-              </button>
-              <button class="action-btn">
-                Wishlist
-                <span class="btn-icon"
-                  ><i class="fa-regular fa-heart"></i
-                ></span>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-image container-image">
-            <img src="/assets/bomber-jacket.avif" alt="product" />
-            <span class="btn-dismiss"><i class="fa fa-close"></i></span>
-          </div>
-
-          <div class="card-description">
-            <h4 class="product-name">product</h4>
-            <p class="product-description">product name</p>
-            <div class="price-section">
-              <h5 class="discounted-price">Rs. 4999</h5>
-              <h5 class="original-price">Rs. 5999</h5>
-            </div>
-
-            <div class="card-cta">
-              <button class="secondary-btn">
-                Buy now
-                <span class="btn-icon"
-                  ><i class="fa fa-shopping-cart"></i
-                ></span>
-              </button>
-              <button class="action-btn">
-                Wishlist
-                <span class="btn-icon"
-                  ><i class="fa-regular fa-heart"></i
-                ></span>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-image container-image">
-            <img src="/assets/bomber-jacket.avif" alt="product" />
-            <span class="btn-dismiss"><i class="fa fa-close"></i></span>
-          </div>
-
-          <div class="card-description">
-            <h4 class="product-name">product</h4>
-            <p class="product-description">product name</p>
-            <div class="price-section">
-              <h5 class="discounted-price">Rs. 4999</h5>
-              <h5 class="original-price">Rs. 5999</h5>
-            </div>
-
-            <div class="card-cta">
-              <button class="secondary-btn">
-                Buy now
-                <span class="btn-icon"
-                  ><i class="fa fa-shopping-cart"></i
-                ></span>
-              </button>
-              <button class="action-btn">
-                Wishlist
-                <span class="btn-icon"
-                  ><i class="fa-regular fa-heart"></i
-                ></span>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-image container-image">
-            <img src="/assets/street-sneaker.avif" alt="product" />
-            <span class="btn-dismiss"><i class="fa fa-close"></i></span>
-          </div>
-
-          <div class="card-description">
-            <h4 class="product-name">product</h4>
-            <p class="product-description">product name</p>
-            <div class="price-section">
-              <h5 class="discounted-price">Rs. 4999</h5>
-              <h5 class="original-price">Rs. 5999</h5>
-            </div>
-
-            <div class="card-cta">
-              <button class="secondary-btn">
-                Buy now
-                <span class="btn-icon"
-                  ><i class="fa fa-shopping-cart"></i
-                ></span>
-              </button>
-              <button class="action-btn">
-                Wishlist
-                <span class="btn-icon"
-                  ><i class="fa-regular fa-heart"></i
-                ></span>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-image container-image">
-            <img src="/assets/street-sneaker.avif" alt="product" />
-            <span class="btn-dismiss"><i class="fa fa-close"></i></span>
-          </div>
-
-          <div class="card-description">
-            <h4 class="product-name">product</h4>
-            <p class="product-description">product name</p>
-            <div class="price-section">
-              <h5 class="discounted-price">Rs. 4999</h5>
-              <h5 class="original-price">Rs. 5999</h5>
-            </div>
-
-            <div class="card-cta">
-              <button class="secondary-btn">
-                Buy now
-                <span class="btn-icon"
-                  ><i class="fa fa-shopping-cart"></i
-                ></span>
-              </button>
-              <button class="action-btn">
-                Wishlist
-                <span class="btn-icon"
-                  ><i class="fa-regular fa-heart"></i
-                ></span>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-image container-image">
-            <img src="/assets/street-sneaker.avif" alt="product" />
-            <span class="btn-dismiss"><i class="fa fa-close"></i></span>
-          </div>
-
-          <div class="card-description">
-            <h4 class="product-name">product</h4>
-            <p class="product-description">product name</p>
-            <div class="price-section">
-              <h5 class="discounted-price">Rs. 4999</h5>
-              <h5 class="original-price">Rs. 5999</h5>
-            </div>
-
-            <div class="card-cta">
-              <button class="secondary-btn">
-                Buy now
-                <span class="btn-icon"
-                  ><i class="fa fa-shopping-cart"></i
-                ></span>
-              </button>
-              <button class="action-btn">
-                Wishlist
-                <span class="btn-icon"
-                  ><i class="fa-regular fa-heart"></i
-                ></span>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-image container-image">
-            <img src="/assets/street-sneaker.avif" alt="product" />
-            <span class="btn-dismiss"><i class="fa fa-close"></i></span>
-          </div>
-
-          <div class="card-description">
-            <h4 class="product-name">product</h4>
-            <p class="product-description">product name</p>
-            <div class="price-section">
-              <h5 class="discounted-price">Rs. 4999</h5>
-              <h5 class="original-price">Rs. 5999</h5>
-            </div>
-
-            <div class="card-cta">
-              <button class="secondary-btn">
-                Buy now
-                <span class="btn-icon"
-                  ><i class="fa fa-shopping-cart"></i
-                ></span>
-              </button>
-              <button class="action-btn">
-                Wishlist
-                <span class="btn-icon"
-                  ><i class="fa-regular fa-heart"></i
-                ></span>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-image container-image">
-            <img src="/assets/street-sneaker.avif" alt="product" />
-            <span class="btn-dismiss"><i class="fa fa-close"></i></span>
-          </div>
-
-          <div class="card-description">
-            <h4 class="product-name">product</h4>
-            <p class="product-description">product name</p>
-            <div class="price-section">
-              <h5 class="discounted-price">Rs. 4999</h5>
-              <h5 class="original-price">Rs. 5999</h5>
-            </div>
-
-            <div class="card-cta">
-              <button class="secondary-btn">
-                Buy now
-                <span class="btn-icon"
-                  ><i class="fa fa-shopping-cart"></i
-                ></span>
-              </button>
-              <button class="action-btn">
-                Wishlist
-                <span class="btn-icon"
-                  ><i class="fa-regular fa-heart"></i
-                ></span>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-image container-image">
-            <img src="/assets/street-sneaker.avif" alt="product" />
-            <span class="btn-dismiss"><i class="fa fa-close"></i></span>
-          </div>
-
-          <div class="card-description">
-            <h4 class="product-name">product</h4>
-            <p class="product-description">product name</p>
-            <div class="price-section">
-              <h5 class="discounted-price">Rs. 4999</h5>
-              <h5 class="original-price">Rs. 5999</h5>
-            </div>
-
-            <div class="card-cta">
-              <button class="secondary-btn">
-                Buy now
-                <span class="btn-icon"
-                  ><i class="fa fa-shopping-cart"></i
-                ></span>
-              </button>
-              <button class="action-btn">
-                Wishlist
-                <span class="btn-icon"
-                  ><i class="fa-regular fa-heart"></i
-                ></span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      </main>
     </div>
   </body>
 </html>
