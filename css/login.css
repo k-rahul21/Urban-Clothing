@@ -6,6 +6,10 @@
   margin: 5rem auto;
 }
 
+.form > p {
+  margin-bottom: 2rem;
+}
+
 p,
 label {
   color: var(--shadow-color);
